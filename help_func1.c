@@ -10,18 +10,18 @@
  */
 char *_cmdcpy(char *dest, char *src, char *cmd, int amt, int count)
 {
-    int idx, vidx;
+	int idx, vidx;
 
-    for (idx = 0; (idx < amt) && (src[idx] != '\0'); idx++)
-        dest[idx] = src[idx];
-    dest[idx] = '/';
-    idx++;
-    for (vidx = 0; (vidx < count) && cmd[vidx] != '\0'; vidx++, idx++)
-        dest[idx] = cmd[vidx];
+	for (idx = 0; (idx < amt) && (src[idx] != '\0'); idx++)
+		dest[idx] = src[idx];
+	dest[idx] = '/';
+	idx++;
+	for (vidx = 0; (vidx < count) && cmd[vidx] != '\0'; vidx++, idx++)
+		dest[idx] = cmd[vidx];
 
-    dest[idx] = '\0';
+	dest[idx] = '\0';
 
-    return (dest);
+	return (dest);
 }
 
 /**
@@ -33,14 +33,14 @@ char *_cmdcpy(char *dest, char *src, char *cmd, int amt, int count)
  */
 char *_cpyarg(char *dest, const char *src, int amt)
 {
-    int idx;
+	int idx;
 
-    for (idx = 0; idx < amt && src[idx] != '\0'; idx++)
-        dest[idx] = src[idx];
-    for ( ; idx < amt; idx++)
-        dest[idx] = '\0';
+	for (idx = 0; idx < amt && src[idx] != '\0'; idx++)
+		dest[idx] = src[idx];
+	for ( ; idx < amt; idx++)
+		dest[idx] = '\0';
 
-    return (dest);
+	return (dest);
 }
 /**
  * _envlen - enviroment length
@@ -49,11 +49,11 @@ char *_cpyarg(char *dest, const char *src, int amt)
  */
 unsigned int _envlen(const char *str)
 {
-    unsigned int idx;
+	unsigned int idx;
 
-    for (idx = 0; str[idx] != '\0'; ++idx)
-        ;
-    return (idx);
+	for (idx = 0; str[idx] != '\0'; ++idx)
+		;
+	return (idx);
 }
 
 /**
@@ -64,13 +64,13 @@ unsigned int _envlen(const char *str)
  */
 int _strcmp(char *str1, char *str2)
 {
-    unsigned int idx = 0;
+	unsigned int idx = 0;
 
-    for (idx = 0; str1[idx] != '\0'; ++idx)
-    {
-        if (str1[idx] != str2[idx])
-            return (0);
-    }
+	for (idx = 0; str1[idx] != '\0'; ++idx)
+	{
+		if (str1[idx] != str2[idx])
+			return (0);
+	}
 
-    return (1);
+	return (1);
 }

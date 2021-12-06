@@ -6,16 +6,16 @@
  */
 void free_arr(char **arr)
 {
-    int idx;
+	int idx;
 
-    if (arr == NULL)
-        return;
+	if (arr == NULL)
+		return;
 
-    for (idx = 0; arr[idx] != NULL; ++idx)
-        free(arr[idx]);
-    if (arr[idx] == NULL)
-        free(arr[idx]);
-    free(arr);
+	for (idx = 0; arr[idx] != NULL; ++idx)
+		free(arr[idx]);
+	if (arr[idx] == NULL)
+		free(arr[idx]);
+	free(arr);
 }
 
 /**
@@ -25,6 +25,6 @@ void free_arr(char **arr)
  */
 void free_process(char *buffer, char **args)
 {
-    free_arr(args);
-    free(buffer);
+	free_arr(args);
+	free(buffer);
 }

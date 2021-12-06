@@ -6,11 +6,11 @@
  */
 unsigned int _strlen(char *buffer) /* Crea la funcion de strlen */
 {
-    unsigned int len = 0;
+	unsigned int len = 0;
 
-    while (buffer[len] != '\0')
-        len++;
-    return (len);
+	while (buffer[len] != '\0')
+		len++;
+	return (len);
 }
 
 /**
@@ -20,35 +20,35 @@ unsigned int _strlen(char *buffer) /* Crea la funcion de strlen */
  */
 char **_strtok(char *str) /* Crea la funcion de string tokenize */
 {
-    char **args;
-    char *token;
-    int idx;
-    unsigned int amt;
+	char **args;
+	char *token;
+	int idx;
+	unsigned int amt;
 
-    str[_strlen(str) - 1] = '\0'; /* eliminamos el enter character*/
-    amt = count_args(str);
+	str[_strlen(str) - 1] = '\0'; /* eliminamos el enter character*/
+	amt = count_args(str);
 
-    if (amt == 0)
-        return (NULL);
+	if (amt == 0)
+		return (NULL);
 
-    args = malloc((sizeof(char *)) * (amt + 1));
-    if (args == NULL)
-        return (NULL);
+	args = malloc((sizeof(char *)) * (amt + 1));
+	if (args == NULL)
+		return (NULL);
 
-    token = strtok(str, " ");
-    for (idx = 0; token != NULL; ++idx)
-    {
-        args[idx] = malloc(_strlen(token) + 1);
-        if (args[idx] == NULL)
-        {
-            free_arr(args);
-            return (NULL);
-        }
-        _strcpy(args[idx], token, _strlen(token) + 1);
-        token = strtok(NULL, " ");
-    }
-    args[idx] = NULL;
-    return (args);
+	token = strtok(str, " ");
+	for (idx = 0; token != NULL; ++idx)
+	{
+		args[idx] = malloc(_strlen(token) + 1);
+		if (args[idx] == NULL)
+		{
+			free_arr(args);
+			return (NULL);
+		}
+		_strcpy(args[idx], token, _strlen(token) + 1);
+		token = strtok(NULL, " ");
+	}
+	args[idx] = NULL;
+	return (args);
 }
 
 /**
@@ -58,19 +58,19 @@ char **_strtok(char *str) /* Crea la funcion de string tokenize */
  */
 unsigned int count_args(char *star)
 {
-    unsigned int arg = 0, check = 0, idx;
+	unsigned int arg = 0, check = 0, idx;
 
-    for (idx = 0; star[idx] != '\0'; ++idx)
-    {
-        if (star[idx] != ' ')
-            check = 1;
-        if ((check && star[idx + 1] == ' ') || (check && star[idx + 1] == '\0'))
-        {
-            ++arg;
-            check = 0;
-        }
-    }
-    return (arg);
+	for (idx = 0; star[idx] != '\0'; ++idx)
+	{
+		if (star[idx] != ' ')
+			check = 1;
+		if ((check && star[idx + 1] == ' ') || (check && star[idx + 1] == '\0'))
+		{
+			++arg;
+			check = 0;
+		}
+	}
+	return (arg);
 }
 
 /**
@@ -82,16 +82,16 @@ unsigned int count_args(char *star)
  */
 char *_strcpy(char *dest, char *src, int amt)
 {
-    int idx;
+	int idx;
 
-    for (idx = 0; (idx < amt) && (src[idx] != '\0'); idx++)
-        dest[idx] = src[idx];
-    while (idx < amt)
-    {
-        dest[idx] = '\0';
-        idx++;
-    }
-    return (dest);
+	for (idx = 0; (idx < amt) && (src[idx] != '\0'); idx++)
+		dest[idx] = src[idx];
+	while (idx < amt)
+	{
+		dest[idx] = '\0';
+		idx++;
+	}
+	return (dest);
 }
 
 /**
@@ -101,14 +101,14 @@ char *_strcpy(char *dest, char *src, int amt)
  */
 int _atoi(char *arg)
 {
-    int check = 1, idx = 0, temp;
+	int check = 1, idx = 0, temp;
 
-    if (arg[idx] == '-')
-    {
-        check = -1;
-        idx++;
-    }
-    for (temp = 0; arg[idx] != '\0'; idx++)
-        temp = temp * 10 + arg[idx] - '0';
-    return (check * temp);
+	if (arg[idx] == '-')
+	{
+		check = -1;
+		idx++;
+	}
+	for (temp = 0; arg[idx] != '\0'; idx++)
+		temp = temp * 10 + arg[idx] - '0';
+	return (check * temp);
 }
