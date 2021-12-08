@@ -57,7 +57,7 @@ void exitcmd(char *buffer, char **args)
 {
 	int check = 0;
 
-	/* siempre y cuando args[1] no sea igual a nulo, (ls) solo seria args nulo.*/
+	 /* siempre y cuando args[1] no sea igual a nulo, (ls) solo seria args nulo.*/
 	if (args[1] != NULL)
 		check = _atoi(args[1]); /* atoi convierte de caracter a integers. */
 	free(buffer);

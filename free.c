@@ -1,5 +1,4 @@
 #include "header.h"
-
 /**
  * free_arr - Frees arrays.
  * @arr: The array to free

@@ -36,7 +36,7 @@ unsigned int dir_check(char *path);
 void _fork(char **args, char **argv, char **env, char *buffer, int amt);
 void exitcmd(char *buffer, char **args);
 
-/***** help_func1 ******/
+/***** More_helpfunc ******/
 char *_cmdcpy(char *dest, char *src, char *cmd, int amt, int count);
 char *_cpyarg(char *dest, const char *src, int amt);
 unsigned int _envlen(const char *str);
