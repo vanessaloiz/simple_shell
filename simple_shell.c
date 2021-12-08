@@ -3,11 +3,10 @@
  * main - A simple shell to pass through commands.
  * @argc: Starting arguments.
  * @argv: Argument array
- * @env: Environment array variable
+ * @env: environment array variable
  * Return: Exits with success or failure.
  */
 int main(int argc, char **argv, char **env)
-
 {
 	char *buffer; /*buffer lo guarda todo */
 	char **args; /* argumentos que esta pasando el usuario */
