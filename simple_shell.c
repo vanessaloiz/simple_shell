@@ -8,10 +8,10 @@
  */
 int main(int argc, char **argv, char **env)
 {
-	char *buffer; /*buffer lo guarda todo */
+	char *buffer = NULL; /*buffer lo guarda todo */
 	char **args; /* argumentos que esta pasando el usuario */
-	size_t bufsize; /* contiene lo que queremos de buffer */
-	ssize_t input; /* recoge el resultado de getline */
+	size_t bufsize = 0; /* contiene lo que queremos de buffer */
+	int input; /* recoge el resultado de getline */
 	int check, idx;
 	(void)argc; /* undeclaring la variable argc */
 
