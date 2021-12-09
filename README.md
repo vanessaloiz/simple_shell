@@ -26,14 +26,10 @@ The executable displays a prompt, waits for user input, interprets it and execut
 
  
 
-## How to compile and use
-
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
-
- 
-
-./hsh
-
+#### Please follow the steps below to compile.
+ 1. `cd simple_shell`
+ 2. `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
+ 3. `./a.hsh`
  
 
 $ [command] [arguments]
