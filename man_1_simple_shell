@@ -1,0 +1,75 @@
+.TH SimpleShell 1 "December 2021" "1.0" "Holberton SimpleShell Manual(GNU)"
+
+ 
+
+.SH NAME
+
+Simple Shell \- C16 Holberton School simple UNIX shell project that handles multiple commands
+
+ 
+
+.SH SYNOPSIS
+
+.B ./hsh
+
+.br
+Compiled using: gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+ 
+
+.SH DESCRIPTION
+
+This Simple Shell mimics the version of Ken Thompson's first UNIX shell. It is specifically designed for UNIX environments.
+Is a simple UNIX command program that interprets, reads commands, and executes them. Once the shell starts it will display 
+the prompt ($) sing, and terminated with the 'exit' command. 
+ 
+
+.SH INVOCATION
+
+.br
+
+.\&
+
+.RS
+
+\&> ./hsh
+
+ 
+
+The prompt '$ ' will appear on terminal. You enter commands following the prompt. Once you have entered the commands you execute the commands by pressing 'ENTER' or 'RETURN' on your keyboard.
+
+ 
+
+.SH FEATURES
+
+ 
+
+ 
+
+.SH BUILTINS
+
+The following are supported by Simple_Shell
+
+.br
+
+.br
+
+ 
+
+ 
+
+.SH BUGS
+
+No known bugs at this time. See status widget in the repositories README for updates though. If you spot a bug please feel free to create an issue or contact the AUTHORS via email.
+
+ 
+
+.SH "SEE ALSO"
+
+.SH sh
+
+ 
+
+.SH "AUTHORS"
+
+Vanessa Loiz and Rafael E. Narvaez
