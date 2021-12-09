@@ -26,7 +26,7 @@ The executable displays a prompt, waits for user input, interprets it and execut
 
  
 
-#### Please follow the steps below to compile.
+##### Please follow the steps below to compile.
  1. `cd simple_shell`
  2. `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
  3. `./a.hsh`
@@ -37,6 +37,8 @@ $ [command] [arguments]
  
 
 ## Example
+
+```
 
 $ ls
 
@@ -68,8 +70,7 @@ $ pwd
 
 This will print the working directory
 
-
-
+```
 
 ## Contributors
 Vanessa Loiz and Rafael Narvaez
