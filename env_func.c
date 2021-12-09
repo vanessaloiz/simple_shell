@@ -62,7 +62,7 @@ void _error(char **argv, char *arg, int amt)
  * env_arr - tokenizes environment array
  * @cmd: command to check
  * @envmnt: environment variable
- * Return: array of direcotries
+ * Return: array of directories
  */
 char **env_arr(char *cmd, char **envmnt)
 {
