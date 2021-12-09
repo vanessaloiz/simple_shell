@@ -82,6 +82,6 @@ Vanessa Loiz and Rafael Narvaez.
 @cohort 16, Holberton School Puerto Rico.
 License & Copyright
 
-Simple Shell project was a 15 day project delegated to Holberton Students around the world. This Shell Project was created by cohort 16 students.
+Simple Shell project was a 15 day project delegated to Holberton Students around the world. This Shell Project was createdby and made with :heart: by cohort 16 students.
 
 © [2021] [Vanessa Loiz & Rafael E. Narvaez Cabeza, Holberton School Puerto Rico]
