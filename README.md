@@ -79,9 +79,9 @@ This will print the working directory
 
 ## Contributors
 Vanessa Loiz and Rafael Narvaez.
-@cohort 16, Holberton School Puerto Rico.
+@cohort-16 SJU-0921, Holberton School Puerto Rico.
 License & Copyright
 
-Simple Shell project was a 15 day project delegated to Holberton Students around the world. This Shell Project was createdby and made with :heart: by cohort 16 students.
+Simple Shell project was a 15 day assignment delegated to Holberton Students around the world. This Shell Project was created and made with :heart:!i! by Cohort-16 SJU-0921 students.
 
-© [2021] [Vanessa Loiz & Rafael E. Narvaez Cabeza, Holberton School Puerto Rico]
+© [2021] [Vanessa Loiz & Rafael E. Narvaez Cabeza | Holberton School :puerto_rico:]
