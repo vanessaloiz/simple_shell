@@ -1,15 +1,13 @@
 ### SIMPLE SHELL 2021-DECEMBER-8 GNU
 
 ### NAME
-simple shell\-shell terminal in C language
+simple shell terminal in C language
 
 ## SYPNOSIS
 
-.B ./hsh
-.
-.TP
+./hsh
 
-[\fBecho\fR\flcommand\fR] | .hsh
+.TP [\fBecho\fR\flcommand\fR] | .hsh
 
 
 <h1 align="center">Simple Shell</h1>
