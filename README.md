@@ -5,7 +5,9 @@ simple shell\-shell terminal in C language
 
 .SH SYPNOSIS
 .B ./hsh
+
 .TP
+
 [\fBecho\fR\flcommand\fR] | .hsh
 
 
