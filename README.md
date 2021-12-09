@@ -1,9 +1,10 @@
-.TH SIMPLE SHELL 2021-DECEMBER-8 GNU
+### SIMPLE SHELL 2021-DECEMBER-8 GNU
 
-.SH NAME
+## NAME
 simple shell\-shell terminal in C language
 
 .SH SYPNOSIS
+
 .B ./hsh
 
 .TP
