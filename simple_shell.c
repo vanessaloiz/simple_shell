@@ -29,7 +29,7 @@ int main(int argc, char **argv, char **env)
 		++idx;
 
 		args = _strtok(buffer); /* lista de argumentos tokenizada */
-		_fork(args, argv, env, buffer, idx); /* llamamos la funcion que ejecuta los comm*/
+		_fork(args, argv, env, buffer, idx); /*call de func que ejecuta los cmd*/
 
 		bufsize = 0;/* reset bufsize para empezar el loop */
 		if (isatty(STDIN_FILENO))
