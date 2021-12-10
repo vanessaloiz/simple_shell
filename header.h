@@ -17,11 +17,11 @@ void env_cmd(char **envmnt);
 char *_env(const char *str, char **envmnt);
 char **env_arr(char *cmd, char **envmnt);
 
-/******** free_func *********/
+/******** free_func **********/
 void free_arr(char **arr);
 void free_process(char *buffer, char **args);
 
-/******** help_func *********/
+/******** help_func **********/
 unsigned int _strlen(char *buffer);
 char **_strtok(char *str);
 unsigned int count_args(char *star);
@@ -36,7 +36,7 @@ unsigned int dir_check(char *path);
 void _fork(char **args, char **argv, char **env, char *buffer, int amt);
 void exitcmd(char *buffer, char **args);
 
-/***** More_helpfunc ******/
+/******** help_func1 *********/
 char *_cmdcpy(char *dest, char *src, char *cmd, int amt, int count);
 char *_cpyarg(char *dest, const char *src, int amt);
 unsigned int _envlen(const char *str);
