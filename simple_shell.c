@@ -12,7 +12,7 @@ int main(int argc, char **argv, char **env)
 	char **args; /* argumentos que esta pasando el usuario */
 	size_t bufsize = 0; /* contiene lo que queremos de buffer */
 	int input; /* recoge el resultado de getline */
-	int check, idx;
+	int check, idx = 0;
 	(void)argc; /* undeclaring la variable argc */
 
 	check = isatty(STDIN_FILENO);/* isatty verifica si esta en el terminal */

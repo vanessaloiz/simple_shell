@@ -22,13 +22,12 @@ void env_exit(char *buffer, char **args, char **env)
  */
 void _error(char **argv, char *arg, int amt)
 {
-	int temp, len, cpy = amt;
+	int temp = 1, len = 1, cpy = amt;
 	char err;
 
 	write(2, argv[0], _strlen(argv[0]));
 	write(2, ": ", 2);
 
-	temp = 1;
 	for (len = 1; cpy >= 10; ++len)
 	{
 		cpy /= 10;
@@ -132,7 +131,7 @@ char *_env(const char *str, char **envmnt)
 
 /**
  * env_cmd - environment command
- * @envmnt:environment variable
+ * @envmnt: environment variable
  */
 void env_cmd(char **envmnt)
 {
