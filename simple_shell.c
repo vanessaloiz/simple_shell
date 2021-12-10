@@ -15,7 +15,7 @@ int main(int argc, char **argv, char **env)
 	int check, idx;
 	(void)argc; /* undeclaring la variable argc */
 
-	check = isatty(STDIN_FILENO);
+	check = isatty(STDIN_FILENO);/* isatty verifica si esta en el terminal */
 	if (check != '\0')
 		write(1, "SHELL@LOIZ-NARVAEZ:$ ", 21);
 
@@ -28,15 +28,15 @@ int main(int argc, char **argv, char **env)
 		}
 		++idx;
 
-		args = _strtok(buffer);
-		_fork(args, argv, env, buffer, idx);
+		args = _strtok(buffer); /* lista de argumentos tokenizada */
+		_fork(args, argv, env, buffer, idx); /* llamamos la funcion que ejecuta los comm*/
 
-		bufsize = 0;
-		if (isatty(STDOUT_FILENO))
-			write(STDOUT_FILENO, "SHELL@LOIZ-NARVAEZ:$ ", 21);
-		buffer = NULL;
+		bufsize = 0;/* reset bufsize para empezar el loop */
+		if (isatty(STDIN_FILENO))
+			write(1, "SHELL@LOIZ-NARVAEZ:$ ", 21);
+		buffer = NULL; /* limpiamos la memoria para reiniciar el loop en getline */
 	}
-	if (input == -1)
-		return (EXIT_FAILURE);
-	return (EXIT_SUCCESS);
+	if (input == -1) /* el input falla */
+		return (EXIT_FAILURE); /* salimos por error */
+	return (EXIT_SUCCESS); /* si todo va bien salimos */
 }
