@@ -22,6 +22,40 @@ The executable displays a prompt, waits for user input, interprets it and execut
  2. `gcc -Wall -Werror -Wextra -pedantic *.c -o hsh`
  3. `./a.hsh`
 
+### Functions
+Prototypes | Description
+----------- | -------------
+**env_cmd** | Function that prints the length of the command (input).
+**path_handle** | Function that handles the `PATH` variable and checks for commands.
+**_fork** | Function that creates the fork process (child).
+**free_func** | Function that frees the memory (buffer).
+**_strlen** | Function that tokenizes a string's.
+**_strcpy** | Function that copies a string.
+**_strtok** | Function that tokenizes a string.
+**_atoi** | Converts a character into an integer.
+**_cmdcpy** | Function that copy commands.
+**_cpyarg** | Function that copies arguments.
+**_strcmp** | Function that compares two strings.
+
+### Files
+The following files were used to build and run our shell.
+
+* [simple_shell.c](https://github.com/vanessaloiz/simple_shell/blob/master/simple_shell.c)
+This is the main function that executes the shell environment.
+* [path_func.c](https://github.com/vanessaloiz/simple_shell/blob/master/path_func.c)
+Function that handles the `PATH` variable and checks for commands.
+* [process_func.c](https://github.com/vanessaloiz/simple_shell/blob/master/process_func.c)
+Function that creates the fork process.
+* [env_func.c](https://github.com/vanessaloiz/simple_shell/blob/master/env_func.c)
+Function that lets you interoperate with the shell.
+* [free.c](https://github.com/vanessaloiz/simple_shell/blob/master/free.c)
+A file with functions that free the process and arrays.
+* [header.h](https://github.com/vanessaloiz/simple_shell/blob/master/header.h)
+Header file where prototypes and libraries are stored.
+* [help_func.c](https://github.com/vanessaloiz/simple_shell/blob/master/help_func.c) and [help_func1.c](https://github.com/vanessaloiz/simple_shell/blob/master/help_func1.c)
+Are files that hold multiple functions needed and/or required to properly run the shell.
+
+
 ### Examples
 
 ```
