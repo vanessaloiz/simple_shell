@@ -25,8 +25,8 @@ void _error(char **argv, char *arg, int amt)
 	int temp, len, cpy = amt;
 	char err;
 
-	write(STDERR_FILENO, argv[0], _strlen(argv[0]));
-	write(STDERR_FILENO, ": ", 2);
+	write(2, argv[0], _strlen(argv[0]));
+	write(2, ": ", 2);
 
 	temp = 1;
 	for (len = 1; cpy >= 10; ++len)
@@ -40,22 +40,22 @@ void _error(char **argv, char *arg, int amt)
 		if ((amt / temp) < 10)
 		{
 			err = (amt / temp + '0');
-			write(STDERR_FILENO, &err, 1);
+			write(2, &err, 1);
 		}
 		else
 		{
 			err = ((amt / temp) % 10 + '0');
-			write(STDERR_FILENO, &err, 1);
+			write(2, &err, 1);
 		}
 		--len;
 		temp /= 10;
 	}
 
 	err = amt % 10 + '0';
-	write(STDERR_FILENO, &err, 1);
-	write(STDERR_FILENO, ": ", 2);
-	write(STDERR_FILENO, arg, _strlen(arg));
-	write(STDERR_FILENO, ": command not found\n", 20);
+	write(2, &err, 1);
+	write(2, ": ", 2);
+	write(2, arg, _strlen(arg));
+	write(2, ": command not found\n", 20);
 }
 
 /**
@@ -142,7 +142,7 @@ void env_cmd(char **envmnt)
 	for (idx = 0; envmnt[idx] != NULL; ++idx)
 	{
 		len = _strlen(envmnt[idx]);
-		write(STDOUT_FILENO, envmnt[idx], len);
-		write(STDOUT_FILENO, "\n", 1);
+		write(1, envmnt[idx], len);
+		write(1, "\n", 1);
 	}
 }
