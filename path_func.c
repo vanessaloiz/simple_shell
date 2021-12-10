@@ -13,7 +13,7 @@ void path_handle(char **args, char *buffer, char **env, char **argv, int amt)
 	char **dir;
 	int idx;
 
-	dir = env_arr(args[0], env);
+	dir = env_arr(args[0], env);/*busca el dir donde se encuentra la func*/
 
 	for (idx = 0; dir[idx] != NULL; ++idx)
 	{
@@ -41,12 +41,12 @@ unsigned int dir_check(char *path)
 	for (idx = 0, dir = 0; path[idx] != '\0'; ++idx)
 	{
 		if (path[idx] != ':')
-			check = 1;
+			check = 1;/*el ultimo dir que contiene file*/
 
 		if ((check && path[idx + 1] == ':') || (check && path[idx + 1] == '\0'))
 		{
 			check = 0;
-			++dir;
+			++dir;/*contamos*/
 		}
 	}
 	return (dir);
